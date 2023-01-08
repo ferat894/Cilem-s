@@ -54,11 +54,8 @@ h3 {
 }
 
 @media only screen and (max-width:600px){
-  .profie {
-    position:relative;
-    display: inline-block;
-    padding-bottom: 180%;
-    vertical-align: middle;
-    right:120%;
-    width:45%;
-  }
+.logo {
+    height:200px;
+    display: flex;
+    justify-content: center;
+}
