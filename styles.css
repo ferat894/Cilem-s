@@ -9,6 +9,9 @@ a {
     text-decoration:none;
 }
 
+.card-title{
+    color: rgba(47, 64, 41, 0.9);}
+
 .logo {
     height:100px;
     display: flex;
@@ -116,5 +119,8 @@ h3 {
 
     .contact-text{
     color:rgba(47, 64, 41, 0.9);}
+
+    .card-title{
+    color: rgba(47, 64, 41, 0.9);}
 
 }
