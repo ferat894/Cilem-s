@@ -1,0 +1,64 @@
+body{
+    background-color: rgba(47, 64, 41, 0.9);
+    width: 100vw;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.logo {
+    height:100px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img {
+    align-self: flex-end;
+}
+
+.navbar {
+    height:50px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav-item {
+    display: inline-block;
+}
+
+.preFade {
+    color: rgba(250, 250, 250, 0.7);
+    text-decoration: none;
+    padding: 1em;
+}
+
+.proverb {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    color: rgba(250, 250, 250, 0.7);
+}
+
+h3 {
+    align-self: center;
+    font-size: 1.5em;
+}
+
+#about {
+    margin: 0 20%;
+    color: rgba(250, 250, 250, 0.7);
+    font-size: 1em;
+}
+
+.profile {
+    width: 30vw;
+}
+
+@media only screen and (max-width:600px){
+  .profie {
+    position:relative;
+    display: inline-block;
+    padding-bottom: 180%;
+    vertical-align: middle;
+    right:120%;
+    width:45%;
+  }
