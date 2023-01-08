@@ -47,12 +47,13 @@ h3 {
 
 @media screen and (min-width: 481px){
     #about {
-        margin: 0 20%;
+        margin: 0 15%;
         color: rgba(250, 250, 250, 0.7);
         font-size: 1em;}
 
     .profile {
-    width: 30vw;}
+    width: 30vw;
+    }
 
     .copyright {
     margin: 4vh 40vw;
@@ -63,8 +64,10 @@ h3 {
     color: rgba(250, 250, 250, 0.7);
     font-size: 1em;}
 
-
+    .icon{
+    width:2em;}
 }
+
 
 @media screen and (min-width: 320px) and (max-width: 480px){
     .logo-img {
@@ -89,9 +92,16 @@ h3 {
     color: gray; }
 
     .contact{
-        margin: 0 10%;
-        color: rgba(250, 250, 250, 0.7);
-        font-size: 1em;}
-    }
+    margin: 0 10%;
+    color: rgba(250, 250, 250, 0.7);
+    font-size: 1em;}
+
+    .icon {
+    moz-transform: scale(2);
+    ms-transform: scale(2);
+    o-transform: scale(2);
+    webkit-transform: scale(2);
+    transform: scale(2);
+    margin: 1em;}
 
 }
