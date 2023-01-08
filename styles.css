@@ -113,6 +113,16 @@ h3 {
     margin: 1em;
     color:rgba(47, 64, 41, 0.9);}
 
+    .icon2 {
+    moz-transform: scale(3);
+    ms-transform: scale(3);
+    o-transform: scale(3);
+    webkit-transform: scale(3);
+    transform: scale(3);
+    margin: 1em 2em 1em 1em;
+    color:rgba(47, 64, 41, 0.9);}
+    }
+
     .contact-text{
     color:rgba(47, 64, 41, 0.9);}
 
