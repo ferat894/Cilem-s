@@ -1,146 +1,141 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap 5 CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+body{
+    background-color: rgba(47, 64, 41, 0.9);
+    width: 100vw;
+    overflow: hidden;
+    overflow-y: scroll;
+}
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <!-- Font Awsome Css/Script -->
-    <script src="https://kit.fontawesome.com/f7fac0ef5b.js" crossorigin="anonymous"></script>
+a {
+    text-decoration:none;
+}
 
-    <!--    Local CSS-->
-    <link rel="stylesheet" href="styles.css">
+.card-title{
+    color: rgba(47, 64, 41, 0.9);}
 
-    <!-- Google tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JSWEX5TD8S">
-    </script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+.logo {
+    height:100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 3em 0;
+}
 
-      gtag('config', 'G-JSWEX5TD8S');
-    </script>
+.logo-img {
+    align-self: flex-end;
+}
 
-</head>
-<body>
+.navbar {
+    height:50px;
+    display: flex;
+    justify-content: center;
+}
 
-<div class="logo">
-    <img class="logo-img" src="logo2.png" alt="Logo">
-</div>
+.header-nav-item {
+    display: inline-block;
+}
 
-<!--<div class="navbar">-->
-<!--    <nav class="header-nav-list">-->
+.preFade {
+    color: rgba(250, 250, 250, 0.7);
+    text-decoration: none;
+    padding: 1em;
+}
 
-<!--            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"-->
-<!--                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--            <span class="navbar-toggler-icon"></span>-->
-<!--        </button>-->
+.proverb {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    color: rgba(250, 250, 250, 0.7);
+}
 
-<!--        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">-->
-
-
-<!--            <a class="nav-link" href="#">-->
-<!--                Hakkimda-->
-<!--            </a>-->
-
-
-<!--            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">-->
-<!--                <li class="nav-item active">-->
-<!--                    <a class="nav-link" href="#">-->
-<!--                        Ekibimiz-->
-<!--                    </a>-->
-<!--                </li>-->
+h3 {
+    align-self: center;
+    font-size: 1.5em;
+}
 
 
-<!--                <li class="nav-item active">-->
-<!--                    <a class="nav-link" href="#">-->
-<!--                        Servis ve Ucretlendirme-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                >-->
+
+@media screen and (min-width: 481px){
+    #about {
+        margin: 0 15%;
+        color: rgba(250, 250, 250, 0.7);
+        font-size: 1em;}
+
+    .profile {
+    width: 30vw;
+    }
+
+    .copyright {
+    margin: 4vh 40vw;
+    color: gray }
+
+    .contact{
+    margin: 0 20%;
+    color: rgba(250, 250, 250, 0.7);
+    font-size: 1em;}
+
+    .icon {
+    moz-transform: scale(2);
+    ms-transform: scale(2);
+    o-transform: scale(2);
+    webkit-transform: scale(2);
+    transform: scale(2);
+    margin: 1em;}
+
+    .icon2 {
+    moz-transform: scale(3);
+    ms-transform: scale(3);
+    o-transform: scale(3);
+    webkit-transform: scale(3);
+    transform: scale(3);
+    margin: 1em 2em 1em 1em;}
+}
 
 
-<!--                <li class="nav-item active">-->
-<!--                    <a class="nav-link" href="#">-->
-<!--                        Iletisim-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </nav>-->
-<!--</div>-->
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .logo-img {
+    align-self: flex-end;
+    width: 80vw;}
 
-<div class="proverb">
-    <h3>Düşüncelerimiz, hissettiklerimiz ve davranışlarımız her gün değişiyor.</h3>
-</div>
-
-<div id="about" class="row">
-
-    <h1>Uzman Klinik Psikolog Çilem Deniz</h1>
-
-    <div class="col-lg-6 col-md-12 col-sm-12">
-        <img class="profile" src="first.jpg">
-    </div>
-
-    <div class="col-lg-6 col-md-6 col-sm-12 paragraf">
+    .proverb {
+    margin: 0 5%;
+    text-align: center;}
 
 
-        <br>
-        <p>Uzm. Klinik Psikolog Fatma Çilem Deniz; 2005 yılında Near East University Psikoloji Bölümü’nü %100 ingilizce olarak kazandı ve 2010 yılında “Yüksek Şeref Listesi”ne girerek "High Honour Student" olarak mezun oldu.
-     Lisans öğrenimi sürecinde;
-  2006 yılında Özel Gökkuşağı Özel Eğitim ve Rehabilitasyon Merkezi'nde,
- 2007 yılında Özel Bilge Anaokulunda,
- 2008 yılında Devlet Hastanesi Psikoloji Kliniği’nde,
- 2009 yılında ise Bakırköy Ruh ve Sinir hastalıkları Hastanesi’nde staj yaptı.
-      2010-2011 yılları arasında Özel Yaşam Özel Eğitim ve Rehabilitasyon Merkezi’nde, 2012-2017 yılları arasında ise Adalet Bakanlığı'na bağlı olan Denetimli Serbestlik Müdürlüğü'nde Psikolog olarak çeşitli grup terapileri ve bireysel terapiler ve seminerler verdi, Sosyal Sorumluluk Projeleri’ni yönetti. Tüm bu süreçlerde çeşitli eğitimler alarak tecrübelerine, yenilerini ekleyerek yol aldı.
-     2018 yılından itibaren, Online Terapi ve Danışmanlık hakkında çeşitli araştırmalar yaptıktan sonra, yurt içinden ve yurt dışından çevrimiçi(online) hasta kabul etmeye başladı.
-     2019 yılında İstanbul Aydın Üniversitesi Klinik Psikoloji Bölümü’nde Yüksek Lisans Eğitimi’ne kabul edildi.
-     Yüksek lisans eğitimi sırasında aynı zamanda; Doç. Dr. Ali Keyvan’dan Psikodinamik Psikoterapi Ekolünün Eğitimi’ni ve Psikodinamik Psikoterapi Süpervizyon Eğitimi’ni ve Prof. Dr. Ahmet Ertan Tezcan tarafından yürütülen Psikoterapotik Görüşme Yöntemleri ve Psikopatoloji eğitimlerini aldı.
-     2021 yılında Doç. Dr. Haydeh Faraji danışmanlığında "Kişilik Bozukluklarında Kıskançlık" konulu projesini tamamlayarak mezun oldu.</p>
-    </div>
+    #about {
+        margin: 0 5%;
+        color: rgba(250, 250, 250, 0.7);
+        font-size: 1em;}
 
-</div>
+    .profile {
+    width: 80vw;}
+
+    .copyright {
+    margin: 10vh 20vw 1vh;
+    color: gray; }
 
 
-<div class="div2 row justify-content-center">
-            <div class="col-lg-4 d-flex justify-content-center mt-5 align-items-stretch">
-                <div class="card" style="width: 16rem;">
-                    <!-- Cafe's Image -->
-                    <a target="_blank">
-                        <img class="card-img-top" src="about.jpg" alt="Cafe-Img">
-                    </a>
-                    <div class="card-body">
-                        <!-- Cafe's Name -->
-                        <h5 class="card-title">Randevu ve İletişim</h5>
-                        <!-- Suburb -->
-                        <p class="card-text"></p>
-                        <!-- Phone Number -->
-                            <a class="icon fa-solid fa-square-phone" target="_blank" href="tel:+905452780002"></a><a class="contact-text" href="tel:+905452780002">+90 545 278 00 02</a><br>
-                        <!-- Email -->
-                            <a class="icon fa-solid fa-envelope" target="_top" href="mailto:fcilemdeniz@gmail.com"></a><a class="contact-text" href="mailto:fcilemdeniz@gmail.com">fcilemdeniz@gmail.com</a>
-                            <br>
-                        <!-- Whatsapp -->
-                        <a class="icon2 fa-brands fa-whatsapp" href="https://wa.me/905452780002" target="_blank"></a>
-                        <!-- Linkedin -->
-                            <a class="icon2 fa-brands fa-linkedin" href="https://www.linkedin.com/in/cilem-deniz-013055167/" target="_blank"></a>
+    .icon {
+    moz-transform: scale(2);
+    ms-transform: scale(2);
+    o-transform: scale(2);
+    webkit-transform: scale(2);
+    transform: scale(2);
+    margin: 1em;
+    color:rgba(47, 64, 41, 0.9);}
 
-                    </div>
-                </div>
-            </div>
-</div>
+    .icon2 {
+    moz-transform: scale(3);
+    ms-transform: scale(3);
+    o-transform: scale(3);
+    webkit-transform: scale(3);
+    transform: scale(3);
+    margin: 1em 2em 1em 1em;
+    color:rgba(47, 64, 41, 0.9);}
+    }
 
+    .contact-text{
+    color:rgba(47, 64, 41, 0.9);}
 
-<div class="copyright">
-    <p>Copyright © 2023 Ferat Ozbey</p>
-</div>
+    .card-title{
+    color: rgba(47, 64, 41, 0.9);}
 
-</body>
-</html>
+}
