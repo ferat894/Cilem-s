@@ -49,6 +49,7 @@ a {
 .table{
     margin: 0 3em 0 2em;
     width: 80vw;
+    color: rgba(250, 250, 250, 0.7);
 }
 
 h3 {
