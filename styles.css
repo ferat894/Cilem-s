@@ -1,147 +1,109 @@
-body{
-    background-color: rgba(47, 64, 41, 0.9);
-    width: 100vw;
-    overflow: hidden;
-    overflow-y: scroll;
+body {
+    background-color: #2F4029;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #FFFFFF;
 }
 
 a {
-    text-decoration:none;
+    text-decoration: none;
+    color: inherit;
 }
 
-.card-title{
-    color: rgba(47, 64, 41, 0.9);}
-
 .logo {
-    height:100px;
     display: flex;
     justify-content: center;
-    margin: 0 0 3em 0;
+    margin: 20px 0;
 }
 
 .logo-img {
-    align-self: flex-end;
+    height: 100px;
 }
 
 .navbar {
-    height:50px;
     display: flex;
     justify-content: center;
+    background-color: #3C523D;
+    padding: 10px 0;
+}
+
+.navbar a {
+    margin: 0 15px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.2em;
 }
 
 .header-nav-item {
     display: inline-block;
 }
 
-.preFade {
-    color: rgba(250, 250, 250, 0.7);
-    text-decoration: none;
-    padding: 1em;
-}
-
 .proverb {
-    height: 200px;
     display: flex;
     justify-content: center;
-    color: rgba(250, 250, 250, 0.7);
+    align-items: center;
+    padding: 20px;
+    background-color: #3C523D;
+    color: #FFFFFF;
+    text-align: center;
+    font-style: italic;
 }
 
-.table{
-    margin: 0 1em 0 2em;
-    width: 80vw;
-    color: rgba(250, 250, 250, 0.7);
+.card {
+    background-color: #3C523D;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-h3 {
-    align-self: center;
+.card-title {
+    color: #2F4029;
     font-size: 1.5em;
+    font-weight: bold;
 }
 
+.table {
+    width: 80vw;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
 
+.copyright {
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    background-color: #3C523D;
+    color: gray;
+}
 
-@media screen and (min-width: 481px){
+@media screen and (min-width: 481px) {
     #about {
         margin: 0 15%;
-        color: rgba(250, 250, 250, 0.7);
-        font-size: 1em;}
-
-    .profile {
-    width: 30vw;
+        font-size: 1em;
     }
 
-    .copyright {
-    margin: 4vh 40vw;
-    color: gray }
-
-    .contact{
-    margin: 0 20%;
-    color: rgba(250, 250, 250, 0.7);
-    font-size: 1em;}
-
-    .icon {
-    moz-transform: scale(2);
-    ms-transform: scale(2);
-    o-transform: scale(2);
-    webkit-transform: scale(2);
-    transform: scale(2);
-    margin: 1em;}
-
-    .icon2 {
-    moz-transform: scale(3);
-    ms-transform: scale(3);
-    o-transform: scale(3);
-    webkit-transform: scale(3);
-    transform: scale(3);
-    margin: 1em 2em 1em 1em;}
+    .profile {
+        width: 30vw;
+        border-radius: 50%;
+    }
 }
 
-
-@media screen and (min-width: 320px) and (max-width: 480px){
+@media screen and (max-width: 480px) {
     .logo-img {
-    align-self: flex-end;
-    width: 80vw;}
-
-    .proverb {
-    margin: 0 5%;
-    text-align: center;}
-
+        width: 80vw;
+    }
 
     #about {
         margin: 0 5%;
-        color: rgba(250, 250, 250, 0.7);
-        font-size: 1em;}
-
-    .profile {
-    width: 80vw;}
-
-    .copyright {
-    margin: 10vh 20vw 1vh;
-    color: gray; }
-
-
-    .icon {
-    moz-transform: scale(2);
-    ms-transform: scale(2);
-    o-transform: scale(2);
-    webkit-transform: scale(2);
-    transform: scale(2);
-    margin: 1em;
-    color:rgba(47, 64, 41, 0.9);}
-
-    .icon2 {
-    moz-transform: scale(3);
-    ms-transform: scale(3);
-    o-transform: scale(3);
-    webkit-transform: scale(3);
-    transform: scale(3);
-    margin: 1em 2em 1em 1em;
-    color:rgba(47, 64, 41, 0.9);}
+        font-size: 1em;
     }
 
-    .contact-text{
-    color:rgba(47, 64, 41, 0.9);}
-
-    .card-title{
-    color: rgba(47, 64, 41, 0.9);}
-
+    .profile {
+        width: 80vw;
+    }
 }
