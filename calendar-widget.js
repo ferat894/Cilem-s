@@ -1,13 +1,14 @@
-(async function () {
+document.addEventListener('DOMContentLoaded', async function () {
   const API_BASE = 'https://scented-hickory-rule.glitch.me';
 
   const container = document.getElementById('calendar-container');
+  if (!container) return; // prevent error if div missing
+
   container.innerHTML = '<h3>Select a date:</h3><div id="calendar"></div><div id="slots"></div>';
 
   const availability = await fetch(`${API_BASE}/availability`).then(r => r.json());
   const bookings = await fetch(`${API_BASE}/bookings`).then(r => r.json());
 
-  // Pre-process data by date
   const availByDate = {};
   const bookedByDateSlot = {};
   availability.forEach(a => {
@@ -21,13 +22,12 @@
 
   function getDayColor(dateStr) {
     const a = availByDate[dateStr];
-    if (!a) return 'gray'; // no availability
+    if (!a) return 'gray';
     const booked = bookedByDateSlot[dateStr] || new Set();
-    if (a.length === booked.size) return 'yellow'; // all booked
-    return 'green'; // partially available
+    if (a.length === booked.size) return 'yellow';
+    return 'green';
   }
 
-  // Build calendar (30 days from today)
   const cal = document.getElementById('calendar');
   const today = new Date();
   for (let i = 0; i < 30; i++) {
@@ -91,4 +91,4 @@
         }
       });
   }
-})();
+});
